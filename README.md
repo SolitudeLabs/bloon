@@ -1,3 +1,4 @@
+---
 # BLOON
 
 ## Base Layer for Operator and Observable Numerics
@@ -164,7 +165,8 @@ python run_examples.py
 This executes all demonstration models followed by the automated
 verification suite.
 
-Example output:
+Expected final output:
+
 === Executable Demo: 1D Heat Transport ===
 Initial Max Temp: 1.000000
 Final Max Temp  : 0.390259
@@ -181,8 +183,6 @@ a reaction/source term.
 === BLOON Executable Demo: Structural Dynamics (1-DOF) ===
 Initial Energy: 50.000000
 Final Energy  : 47.564439
-
-Expected final output:
 
 ---
 
