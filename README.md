@@ -184,6 +184,8 @@ Final Energy  : 47.564439
 
 Expected final output:
 
+---
+
 
 ======================================================================
   Pytest Verification Suite
