@@ -1,6 +1,6 @@
 import numpy as np
 from core.state import State
-from core.topology import Topology1D
+from topology.topology import Topology1D
 from discretization.fd1d import laplacian_1d_matrix
 
 

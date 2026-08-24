@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import Dict, Any
 import numpy as np
-
+from topology.mesh2d import Mesh2D
 
 @dataclass
 class State:
@@ -22,3 +22,6 @@ class State:
 
     def __len__(self) -> int:
         return len(self.values)
+    
+
+    

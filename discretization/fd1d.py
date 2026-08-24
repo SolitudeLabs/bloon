@@ -1,5 +1,5 @@
 import numpy as np
-from core.topology import Topology1D
+from topology.topology import Topology1D
 
 
 def laplacian_1d_matrix(topology: Topology1D) -> np.ndarray:

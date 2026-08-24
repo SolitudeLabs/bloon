@@ -1,6 +1,6 @@
 import numpy as np
 from core.state import State
-from core.topology import Topology1D
+from topology.topology import Topology1D
 
 
 def compute_integrated_mass_1d(state: State, topology: Topology1D) -> float:

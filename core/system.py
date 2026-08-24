@@ -1,7 +1,7 @@
 from dataclasses import dataclass, field
 from typing import List, Dict, Any, Protocol
 from core.state import State
-from core.topology import DiscreteDomain
+from topology.topology import DiscreteDomain
 from core.operators import ResidualOperator, StorageOperator, JacobianOperator
 from core.constraints import AdmissibilityLayer, AdmissibilityReport
 from core.observables import ObservableManager
