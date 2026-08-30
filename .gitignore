@@ -18,4 +18,4 @@ engine/
 # Local/editor files
 .vscode/
 .idea/
-*.log
+*.log.codeinsight/
