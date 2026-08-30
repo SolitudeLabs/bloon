@@ -1,0 +1,136 @@
+{
+    "schema": "bloon-animation",
+    "version": "1.0",
+    "scene": "KKT Contact",
+    "objects": [
+        {
+            "id": "g",
+            "type": "equation",
+            "content": "\\boxed{g \\ge 0}",
+            "position": [
+                -3,
+                2,
+                0
+            ]
+        },
+        {
+            "id": "lam",
+            "type": "equation",
+            "content": "\\boxed{\\lambda = 0}",
+            "position": [
+                3,
+                2,
+                0
+            ]
+        },
+        {
+            "id": "comp",
+            "type": "equation",
+            "content": "\\boxed{\\lambda g = 0}",
+            "position": [
+                0,
+                -3,
+                0
+            ]
+        },
+        {
+            "id": "mass",
+            "type": "point",
+            "position": [
+                0,
+                2,
+                0
+            ]
+        },
+        {
+            "id": "ground",
+            "type": "vector",
+            "start": [
+                -2,
+                -1,
+                0
+            ],
+            "end": [
+                2,
+                -1,
+                0
+            ]
+        },
+        {
+            "id": "reaction",
+            "type": "vector",
+            "start": [
+                0,
+                -1,
+                0
+            ],
+            "end": [
+                0,
+                1,
+                0
+            ]
+        }
+    ],
+    "timeline": [
+        {
+            "type": "create",
+            "object_id": "g",
+            "duration": 1.0
+        },
+        {
+            "type": "create",
+            "object_id": "lam",
+            "duration": 1.0
+        },
+        {
+            "type": "create",
+            "object_id": "comp",
+            "duration": 1.0
+        },
+        {
+            "type": "create",
+            "object_id": "mass",
+            "duration": 1.0
+        },
+        {
+            "type": "create",
+            "object_id": "ground",
+            "duration": 1.0
+        },
+        {
+            "type": "wait",
+            "duration": 1.0
+        },
+        {
+            "type": "move",
+            "object_id": "mass",
+            "duration": 2.0,
+            "target": [
+                0,
+                -1,
+                0
+            ]
+        },
+        {
+            "type": "morph_equation",
+            "object_id": "g",
+            "duration": 0.5,
+            "new_content": "\\boxed{g = 0}"
+        },
+        {
+            "type": "create",
+            "object_id": "reaction",
+            "duration": 1.0
+        },
+        {
+            "type": "morph_equation",
+            "object_id": "lam",
+            "duration": 0.5,
+            "new_content": "\\boxed{\\lambda > 0}"
+        },
+        {
+            "type": "wait",
+            "duration": 2.0
+        }
+    ]
+}

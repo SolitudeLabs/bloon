@@ -1,0 +1,8 @@
+hard_constraints:
+  - id: energy_limit
+    type: threshold
+    severity: HARD
+    description: Required energy must not exceed available system energy
+    task_field: energy_required
+    state_field: energy
+    operator: le

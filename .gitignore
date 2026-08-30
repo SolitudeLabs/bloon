@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Private implementation
+bloon_anim/
+src/
+engine/
+
+# Local/editor files
+.vscode/
+.idea/
+*.log

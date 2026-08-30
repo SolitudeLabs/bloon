@@ -1,0 +1,48 @@
+{
+    "schema": "bloon-animation",
+    "version": "1.0",
+    "scene": "Math Pipeline",
+    "objects": [
+        {
+            "id": "pipeline",
+            "type": "equation",
+            "content": "\\min \\frac{1}{2}x^T Q x + c^T x \\\\ s.t. \\; Ax \\ge b",
+            "position": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "timeline": [
+        {
+            "type": "create",
+            "object_id": "pipeline",
+            "duration": 1.0
+        },
+        {
+            "type": "wait",
+            "duration": 1.5
+        },
+        {
+            "type": "morph_equation",
+            "object_id": "pipeline",
+            "duration": 2.0,
+            "new_content": "\\begin{cases} Qx + c - A^T \\lambda = 0 \\\\ Ax - b = g \\ge 0 \\\\ \\lambda \\ge 0 \\\\ \\lambda^T g = 0 \\end{cases}"
+        },
+        {
+            "type": "wait",
+            "duration": 1.5
+        },
+        {
+            "type": "morph_equation",
+            "object_id": "pipeline",
+            "duration": 2.0,
+            "new_content": "\\text{LCP}(q, M): \\quad w = Mz + q, \\quad w \\ge 0, \\quad z \\ge 0, \\quad w^T z = 0"
+        },
+        {
+            "type": "wait",
+            "duration": 2.0
+        }
+    ]
+}
